@@ -1,23 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Car Models</title>
+    <title>Models</title>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-   
     <header>
         <h1 id="title">Models</h1>
-        <button onclick="goBack()">Back</button>
+        <nav aria-label="Main navigation">
+            <a href="index.html">Brands</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <button aria-label="Return to previous page" onclick="goBack()">Back</button>
     </header>
-
     <main>
-        <section id="models-container"></section>
+        <section>
+            <img src="images/240sxCoupe.jpg" alt="Red 240sx coupe">
+        </section>
+        <section id="models-container" role="region" aria-label="Vehicle models">
+        </section>
     </main>
-
-    <script src="js/models.js"></script> 
+    <script src="js/models.js"></script>
 </body>
 </html>
