@@ -3,17 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Car Details</title>
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Vehicle Details</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header>
-        <h1>Model Details</h1>
-        <button onclick="goBack()">Back</button>
+        <h1>Vehicle Details</h1>
+        <nav aria-label="Main navigation">
+            <a href="index.html">Brands</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <button aria-label="Return to previous page" onclick="goBack()">
+            Back
+        </button>
     </header>
     <main>
-        <section id="details-container"></section>
+        <section>
+            <img src="images/Porsche-911-Turbo-059.jpg" alt="Classic black 911 turbo">
+        </section>
+        <section id="details-container" role="region" aria-label="Vehicle information">
+        </section>
     </main>
     <script src="js/details.js"></script>
 </body>

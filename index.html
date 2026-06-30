@@ -8,18 +8,30 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header>
-        <h1>Car Explorer</h1>
-    </header>
-
-    <main>
-        <section id="makes-container"></section>
-    </main>
-
-    <footer>
-        <p>Proyecto APIs</p>
-    </footer>
-
-  <script src="js/makes.js"></script>
+<header>
+    <h1>Car Explorer</h1>
+    <nav aria-label="Main navigation">
+        <ul>
+            <li><a href="index.html">Brands</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <section class="hero">
+        <img src="images/purpleCivic8th.jpg" alt="Purple modified Honda Civic parked outside of a house">
+        <h2>Find your favorite car brand</h2>
+        <p lang="es">Bienvenido al proyecto desarrollado para la materia de AJAX y APIs.</p>
+    </section>
+    <section
+        id="makes-container"
+        role="region"
+        aria-label="Vehicle brands">
+    </section>
+</main>
+<footer>
+    <p>Car Explorer 2026</p>
+</footer>
+<script src="js/makes.js"></script>
 </body>
 </html>
